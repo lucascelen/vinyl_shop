@@ -1,9 +1,7 @@
 
 @extends('layouts.template')
 
-<body>
 {{--  Navigation  --}}
-<main class="container mt-3">
     @section('title', 'Records')
 
     @section('main')
@@ -19,8 +17,6 @@
 {{--        //echo '<li>' . $record . '</li>';--}}
 {{--   //}--}}
 
-</main>
-</body>
 
 
 

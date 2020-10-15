@@ -12,17 +12,13 @@
 <body>
 {{--  Navigation  --}}
 @include('shared.navigation')
-<main class="container mt-3">
-    @yield('main', 'Page under construction ...')
-    <div class="text-right">
-        @include('shared.footer')
-        <script src="{{ mix('js/app.js') }}"></script>
-    </div>
-</main>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <main class="container mt-3">
+        @yield('main', 'Page under construction ...')
+        <div class="text-right">
+            @include('shared.footer')
+        </div>
+    </main>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
 
