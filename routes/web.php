@@ -29,9 +29,11 @@ Route::view('/', 'home');
 
 Route::view('contact-us', 'contact');
 
+
 // New version with prefix and group
 Route::prefix('admin')->group(function () {
     Route::redirect('/', '/admin/records');
     Route::get('records', 'Admin\RecordController@index');
-
 });
+
+
