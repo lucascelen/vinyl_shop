@@ -1,4 +1,16 @@
 
 main {
     min-height: 500px;
+
+    .cardShopMaster {
+        display: none;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .capitalize {
+        text-transform: capitalize;
+    }
 }

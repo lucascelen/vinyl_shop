@@ -10907,5 +10907,17 @@ main {
   min-height: 500px;
 }
 
+main .cardShopMaster {
+  display: none;
+}
+
+main .pointer {
+  cursor: pointer;
+}
+
+main .capitalize {
+  text-transform: capitalize;
+}
+
 
 /*# sourceMappingURL=app.css.map*/
