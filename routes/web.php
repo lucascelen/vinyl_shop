@@ -30,7 +30,8 @@ Route::get('shop_alt', 'ShopController@shop_alt');
     //return view('contact');
 //});
 
-Route::view('contact-us', 'contact');
+Route::get('contact-us', 'ContactUsController@show');
+Route::post('contact-us', 'ContactUsController@sendEmail');
 
 
 // New version with prefix and group
