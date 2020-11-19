@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 //});
 
+Auth::routes();
+
+Route::get('logout', 'Auth\LoginController@logout');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::redirect('home', '/');
+
 Route::view('/', 'home');
 Route::get('shop', 'ShopController@index');
 Route::get('shop/{id}', 'ShopController@show');
@@ -35,9 +41,10 @@ Route::post('contact-us', 'ContactUsController@sendEmail');
 
 
 // New version with prefix and group
-Route::prefix('admin')->group(function () {
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::redirect('/', '/admin/records');
     Route::get('records', 'Admin\RecordController@index');
 });
+
 
 
