@@ -13,4 +13,8 @@ main {
     .capitalize {
         text-transform: capitalize;
     }
+    .btn[disabled] {
+        cursor: not-allowed;
+    }
+
 }
